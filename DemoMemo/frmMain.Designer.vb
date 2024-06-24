@@ -23,7 +23,6 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.mnuMain = New System.Windows.Forms.MenuStrip()
-        Me.txtEditor = New System.Windows.Forms.TextBox()
         Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuFileOpen = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuFileSave = New System.Windows.Forms.ToolStripMenuItem()
@@ -33,6 +32,7 @@ Partial Class frmMain
         Me.mnuEditCut = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuEditCopy = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuEditPaste = New System.Windows.Forms.ToolStripMenuItem()
+        Me.txtEditor = New System.Windows.Forms.TextBox()
         Me.mnuMain.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -44,17 +44,6 @@ Partial Class frmMain
         Me.mnuMain.Size = New System.Drawing.Size(800, 24)
         Me.mnuMain.TabIndex = 0
         Me.mnuMain.Text = "MenuStrip1"
-        '
-        'txtEditor
-        '
-        Me.txtEditor.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txtEditor.Font = New System.Drawing.Font("MS UI Gothic", 11.0!)
-        Me.txtEditor.Location = New System.Drawing.Point(0, 24)
-        Me.txtEditor.Multiline = True
-        Me.txtEditor.Name = "txtEditor"
-        Me.txtEditor.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.txtEditor.Size = New System.Drawing.Size(800, 426)
-        Me.txtEditor.TabIndex = 1
         '
         'mnuFile
         '
@@ -111,6 +100,17 @@ Partial Class frmMain
         Me.mnuEditPaste.Name = "mnuEditPaste"
         Me.mnuEditPaste.Size = New System.Drawing.Size(180, 22)
         Me.mnuEditPaste.Text = "貼り付け (&P)"
+        '
+        'txtEditor
+        '
+        Me.txtEditor.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.txtEditor.Font = New System.Drawing.Font("MS UI Gothic", 11.0!)
+        Me.txtEditor.Location = New System.Drawing.Point(0, 24)
+        Me.txtEditor.Multiline = True
+        Me.txtEditor.Name = "txtEditor"
+        Me.txtEditor.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.txtEditor.Size = New System.Drawing.Size(800, 426)
+        Me.txtEditor.TabIndex = 1
         '
         'frmMain
         '
