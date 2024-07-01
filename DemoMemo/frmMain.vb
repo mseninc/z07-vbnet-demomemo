@@ -57,15 +57,24 @@
     End Sub
 
     Private Sub mnuEditCut_Click(sender As Object, e As EventArgs) Handles mnuEditCut.Click
+        If String.IsNullOrEmpty(txtEditor.SelectedText) Then
+            Return
+        End If
         Clipboard.SetText(txtEditor.SelectedText)
         txtEditor.SelectedText = ""
     End Sub
 
     Private Sub mnuEditCopy_Click(sender As Object, e As EventArgs) Handles mnuEditCopy.Click
+        If String.IsNullOrEmpty(txtEditor.SelectedText) Then
+            Return
+        End If
         Clipboard.SetText(txtEditor.SelectedText)
     End Sub
 
     Private Sub mnuEditPaste_Click(sender As Object, e As EventArgs) Handles mnuEditPaste.Click
+        If String.IsNullOrEmpty(Clipboard.GetText()) Then
+            Return
+        End If
         txtEditor.SelectedText = Clipboard.GetText()
     End Sub
 
